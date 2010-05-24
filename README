@@ -1,0 +1,6 @@
+Initscripts based on initscripts version 2010.05-3 package.
+Added support for the start in background of chains of daemons in rc.conf
+
+Example of usage in rc.conf:
+DAEMONS=(syslog-ng +HAL_DEPS @crond)
+HAL_DEPS=(hal slim)
